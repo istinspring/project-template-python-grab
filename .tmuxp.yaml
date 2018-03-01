@@ -1,0 +1,23 @@
+session_name: grab-project
+windows:
+  - window_name: code
+    focus: true
+    start-directory: ./
+    panes:
+      - shell_command:
+        - workon grabproject
+        - nvim
+  - window_name: cmd
+    start-directory: ./
+    panes:
+      - shell_command:
+        - workon grabproject
+  - window_name: srv
+    start-directory: ./
+    panes:
+      - shell_command:
+        - workon grabproject
+  - window_name: db
+    panes:
+      - shell_command:
+        - mongodb
